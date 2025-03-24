@@ -12,6 +12,7 @@
   -    rodykline
   -    string methods
   -    number methods
+  -    Math methods
   -    array methods
   -    object methods
 - palyginimas:

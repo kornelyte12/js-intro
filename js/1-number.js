@@ -59,5 +59,19 @@ console.log(sum2);
 sum2 += 2;
 console.log(sum2);
 
+console.clear
+console.log(Infinity+1)
+console.log(Infinity/2)
+console.log(5/0)
+console.log(0/0)
+
+//N**1/2
+//N**1/3
+//N**1/4
+console.log(81**(1/2))
+console.log(64**(1/3))
+
+
+
 
 
