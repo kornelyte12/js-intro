@@ -7,12 +7,12 @@
         "if" : "node --watch ./js/if.js",
         "boolean": "node --watch ./js/boolean.js",
         "function": "node --watch ./js/4-function.js",
-        "nd": "node --watch ./js/nd.js",
+        "nd": "node --watch ./nd.js",
         "string": "node --watch ./js/2-string.js",
         "number": "node --watch ./js/1-number.js",
         "js": "node ./index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
-        "autor": "Kornelija (https://github.com/kornelyte12) "
+        
     },
     "keywords": [],
     "author": "https://github.com/kornelyte12",

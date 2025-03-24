@@ -200,12 +200,12 @@ if (9 > 20) {
 } else{
     console.log('bandykite kita karta')
 }
-if (9 == 20) {
+if (9 === 20) {
     console.log('pomidoras')
 } else{
     console.log('bandykite kita karta')
 }
-if (9 != 20) {
+if (9 !== 20) {
     console.log('pomidoras')
 } else{
     console.log('bandykite kita karta')
@@ -257,53 +257,50 @@ string(zodis5)
 const zodisx= ['pomidoras']
 const zodisz= ['bandykite dar karta']
 
-function if (zodisx,zodisz)
+function s (zodisx,zodisz)
 
-zodisx.length
-if(zodisx.length>zodisz.length){
-    
-    console.log('pomidoras')
+if (zodisx.length > zodisz.length) {
+    console.log('pomidoras');
+} else { 
+    console.log('bandykite dar karta');
 }
-   { else if{ (zodisx.length>zodisz.length)
 
-    console.log('bandykite dar karta')
-  }
-  }
-  
+if (zodisx > zodisz) {
+    console.log('pomidoras');
+} else{
+    console.log('bandykite dar karta');
+}
 
- if(zodisx>zodisz) 
-{
-    console.log('sekasi', 'kaip')}
+if (zodisx < zodisz) {
+    console.log('pomidoras');
+} else{
+    console.log('bandykite dar karta');
+}
 
+if (zodisx >= zodisz) {
+    console.log('pomidoras');
+}else {
+    console.log('bandykite dar karta');
+}
 
+if (zodisx <= zodisz) {
+    console.log('pomidoras');
+}else {
+    console.log('bandykite dar karta');
+}
 
- if(zodisx<zodisz)
-{
-     console.log('sekasi', 'kaip')}
-
-
-
- if(zodisx>=zodisz)
- {
-     console.log('sekasi', 'kaip')}
-
-
-
- if(zodisx <= zodisz)
- {
-     console.log('sekasi', 'kaip')}
-
-
-
-if(zodisx==zodisz)
- {
-     console.log('sekasi', 'kaip')}
+if (zodisx == zodisz) {
+    console.log('pomidoras');
+}else {
+    console.log('bandykite dar karta');
+}
 
 
-
-if(zodisx!=zodisz)
-{
-     console.log('sekasi', 'kaip')}            
+if (zodisx != zodisz) {
+    console.log('pomidoras');
+}else {
+    console.log('bandykite dar karta');
+}
 
 
 
