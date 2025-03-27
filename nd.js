@@ -186,8 +186,8 @@ console.log(nl2);
 
 //3.3 a-f
 
-const name1 = 9;
-const name2 = 20
+const luckynumber = [9];
+const luckynumberA = [20]
 
 if (9 < 20) {
     console.log('pomidoras')
@@ -257,53 +257,94 @@ string(zodis5)
 const zodisx= ['pomidoras']
 const zodisz= ['bandykite dar karta']
 
-function s (zodisx,zodisz)
-
-if (zodisx.length > zodisz.length) {
-    console.log('pomidoras');
-} else { 
+function zodziai(zodisx,zodisz){
+    if (zodisx.length > zodisz.length)
+    {
+        console.log('pomidoras');
+    } else { 
+        console.log('bandykite dar karta');
+    } 
+    }
+    {
+    if (zodisx > zodisz) 
+    {
+        console.log('pomidoras');
+    } else {
     console.log('bandykite dar karta');
-}
-
-if (zodisx > zodisz) {
+    }
+    }
+    {
+    if (zodisx < zodisz) 
+    {
+        console.log('pomidoras');
+    } else {
+         console.log('bandykite dar karta');
+    }
+    }
+    {
+    if (zodisx >= zodisz) 
+    {
+        console.log('pomidoras');
+    } else {
+        console.log('bandykite dar karta');
+    }
+    }
+    {
+    if (zodisx <= zodisz) 
+    {
     console.log('pomidoras');
-} else{
+    } else {
     console.log('bandykite dar karta');
-}
-
-if (zodisx < zodisz) {
+    }
+    }
+    {
+    if (zodisx == zodisz) {
     console.log('pomidoras');
-} else{
+    }else {
     console.log('bandykite dar karta');
-}
-
-if (zodisx >= zodisz) {
+    }
+    }
+    {
+    if (zodisx != zodisz) {
     console.log('pomidoras');
-}else {
+    } else {
     console.log('bandykite dar karta');
+    }
+    }
+
+
+
+//*ciklas
+
+
+
+
+//2
+let tekstas='abcdef';
+let tekstasAtv= ''
+
+for(let i=tekstas.length-1;i>=0;i--){
+    tekstasAtv+=tekstas[i]
+}console.log(tekstasAtv)
+
+
+
+//1
+
+function sumInRage(start,end){
+    let sum =0;
+    for(let i=start; i<=end; i++){
+    sum+=i
+    } return sum
 }
+console.log(sumInRage(0,0));
+console.log(sumInRage(0,4));
+console.log(sumInRage(0,100));
+console.log(sumInRage(574,815));
+console.log(sumInRage(-50,50));
+console.log(sumInRage(-70,30));
 
-if (zodisx <= zodisz) {
-    console.log('pomidoras');
-}else {
-    console.log('bandykite dar karta');
-}
-
-if (zodisx == zodisz) {
-    console.log('pomidoras');
-}else {
-    console.log('bandykite dar karta');
-}
-
-
-if (zodisx != zodisz) {
-    console.log('pomidoras');
-}else {
-    console.log('bandykite dar karta');
-}
-
-
-
+///3.
 
 
 
