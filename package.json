@@ -5,6 +5,7 @@
     "scripts": {
         "multiply" : "node --watch ./task/multiply.js",
         "for" : "node --watch ./js-intro/js/8-for.js",
+        "math" : "node --watch ./js-intro/js/10-math.js",
         "object" : "node --watch ./js-intro/js/9-object.js",
         "text" : "node --watch ./task/text-size.js",
         "multi-table" : "node --watch ./task/multi-table.js",
