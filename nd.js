@@ -346,12 +346,192 @@ console.log(sumInRage(-70,30));
 
 ///3.
 
+function suskaiciuotiDalinimus(intervalasPradzia, intervalasPabaiga) {
+    function skaiciaiDalinasiIs(skaicius, daliklis) {
+        return skaicius % daliklis === 0;
+    }
+
+    function skaiciuotiIntervale(intervalasPradzia, intervalasPabaiga, daliklis) {
+        let skaiciai = 0;
+        for (let i = intervalasPradzia; i <= intervalasPabaiga; i++) {
+            if (skaiciaiDalinasiIs(i, daliklis)) {
+                skaiciai++;
+            }
+        }
+        return skaiciai;
+    }
+
+    let rezultatai = [
+        `Skaičių intervale tarp ${intervalasPradzia} ir ${intervalasPabaiga}, besidalijančių be liekanos iš 3 yra ${skaiciuotiIntervale(intervalasPradzia, intervalasPabaiga, 3)} vienetai.`,
+        `Skaičių intervale tarp ${intervalasPradzia} ir ${intervalasPabaiga}, besidalijančių be liekanos iš 5 yra ${skaiciuotiIntervale(intervalasPradzia, intervalasPabaiga, 5)} vienetai.`,
+        `Skaičių intervale tarp ${intervalasPradzia} ir ${intervalasPabaiga}, besidalijančių be liekanos iš 7 yra ${skaiciuotiIntervale(intervalasPradzia, intervalasPabaiga, 7)} vienetai.`,
+        `Skaičių intervale tarp ${intervalasPradzia} ir ${intervalasPabaiga}, besidalijančių be liekanos iš 5 yra ${skaiciuotiIntervale(intervalasPradzia, intervalasPabaiga, 3)} vienetai.`,
+        `Skaičių intervale tarp ${intervalasPradzia} ir ${intervalasPabaiga}, besidalijančių be liekanos iš 7 yra ${skaiciuotiIntervale(intervalasPradzia, intervalasPabaiga, 2)} vienetai.`
+    ];
+
+    return rezultatai;
+}
+/// Funkcijos
+//1
+
+function tusciaFunkcija() {
+    return false;
+}
+
+// Testas
+console.log(tusciaFunkcija());
+
+//2
+function daugyba(skaicius1, skaicius2) {
+    let sandauga = skaicius1 * skaicius2; // Apskaičiuoja sandaugą
+    return sandauga; // Grąžina sandaugos rezultatą
+}
+
+// Testai
+let skaicius1 = 2;
+let skaicius2 = 3;
+let skaicius3 = 5;
+
+console.log(daugyba(skaicius1, skaicius2)); // 6
+console.log(daugyba(skaicius3, skaicius2)); // 15
+console.log(daugyba(skaicius1, skaicius3)); // 10
+
+//3
 
 
+function skaitmenuKiekisSkaiciuje(skaic1){
+if (typeof skaic1!=string){
+    console.log(' Pateikta netinkamo tipo reikšmė.')
+} else if (skaic1.toString().length) {
+} return toString().length
+}
+console.log( skaitmenuKiekisSkaiciuje(5))
+console.log( skaitmenuKiekisSkaiciuje(781))
+console.log( skaitmenuKiekisSkaiciuje(37060123456))
+console.log( skaitmenuKiekisSkaiciuje(true))
+console.log( skaitmenuKiekisSkaiciuje('asd'))
+console.log( skaitmenuKiekisSkaiciuje(NaN))
+//????????
+
+//4
 
 
+function didziausiasSkaiciusSarase(kintamasis) {
+    // Patikriname, ar kintamasis yra masyvas
+    if (!Array.isArray(kintamasis)) {
+        console.log("Pateikta netinkamo tipo reikšmė.");
+        return; // Nutraukiame funkcijos vykdymą, jei kintamasis nėra masyvas
+    }
 
+    // Patikriname, ar masyvas nėra tuščias
+    if (kintamasis.length === 0) {
+        console.log("Pateiktas sąrašas negali būti tuščias.");
+        return; // Nutraukiame funkcijos vykdymą, jei sąrašas tuščias
+    }
 
+    // Ieškome didžiausio skaičiaus sąraše
+    let didziausias = kintamasis[0]; // Pradžiai priskiriame pirmąjį skaičių
+    for (let i = 1; i < kintamasis.length; i++) {
+        if (kintamasis[i] > didziausias) {
+            didziausias = kintamasis[i]; // Jei rastas didesnis skaičius, atnaujiname didžiausią
+        }
+    }
 
+    return didziausias; // Grąžiname didžiausią skaičių
+}
 
+// Testai
+console.log(didziausiasSkaiciusSarase([1, 3, 5, 7, 2])); // 7
+console.log(didziausiasSkaiciusSarase([9, 2, 4, 6]));     // 9
+console.log(didziausiasSkaiciusSarase([7]));              // 7
+console.log(didziausiasSkaiciusSarase([]));               // Pateiktas sąrašas negali būti tuščias.
+console.log(didziausiasSkaiciusSarase("ne masyvas"));     // Pateikta netinkamo tipo reikšmė.
 
+//4
+
+function didziausiasSkaiciusSarase(sarasas) {
+    // Patikriname, ar įvestas kintamasis yra sąrašas (array)
+    if (!Array.isArray(sarasas)) {
+      return "Pateikta netinkamo tipo reikšmė.";
+    }
+  
+    // Patikriname, ar sąrašas nėra tuščias
+    if (sarasas.length === 0) {
+      return "Pateiktas sąrašas negali būti tuščias.";
+    }
+  
+    // Inicijuojame kintamąjį, kuriame saugosime didžiausią skaičių
+    let didziausias = sarasas[0];
+  
+    // Pereiname per visą sąrašą ir atnaujiname didžiausią skaičių
+    for (let i = 1; i < sarasas.length; i++) {
+        if (typeof list[i]!=='number'){ // jog turi buti skaicius
+            continue;
+        }
+        if(!isFinite(list[i])){
+            continue;
+        }
+      if (sarasas[i] > didziausias) {
+        didziausias = sarasas[i];
+      }
+    }
+  
+    // Gražiname didžiausią skaičių
+    return didziausias;
+  }
+  
+  // Testai:
+  console.log(didziausiasSkaiciusSarase([1])); // 1
+  console.log(didziausiasSkaiciusSarase([1, 2, 3])); // 3
+  console.log(didziausiasSkaiciusSarase([-5, 78, 14, 0, 18])); // 78
+  console.log(didziausiasSkaiciusSarase([69, 69, 69, 69, 66])); // 69
+  console.log(didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8])); // -1
+  console.log(didziausiasSkaiciusSarase("pomidoras")); // "Pateikta netinkamo tipo reikšmė."
+  console.log(didziausiasSkaiciusSarase([])); // "Pateiktas sąrašas negali būti tuščias."
+
+  //5
+  function isrinktiRaides(tekstas, zingsnis) {
+    // Patikriname, ar pirmasis kintamasis yra teksto tipo
+    if (typeof tekstas !== 'string') {
+      return "Pirmasis kintamasis yra netinkamo tipo.";
+    }
+  
+    // Patikriname, ar pirmasis kintamasis yra ne tuščias tekstas ir ne didesnis nei 100 simbolių
+    if (tekstas.length === 0 || tekstas.length > 100) {
+      return "Pirmojo kintamojo reikšmė yra netinkamo dydžio.";
+    }
+  
+    // Patikriname, ar antrasis kintamasis yra skaičiaus tipo
+    if (typeof zingsnis !== 'number') {
+      return "Antrasis kintamasis yra netinkamo tipo.";
+    }
+  
+    // Patikriname, ar antrasis kintamasis yra didesnis už nulį
+    if (zingsnis <= 0) {
+      return "Antrasis kintamasis turi būti didesnis už nulį.";
+    }
+  
+    // Patikriname, ar antrasis kintamasis nėra didesnis už pateikto teksto ilgį
+    if (zingsnis > tekstas.length) {
+      return "Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.";
+    }
+  
+    // Išrenkame raides pagal nurodytą žingsnį
+    let rezultatas = '';
+    for (let i = zingsnis - 1; i < tekstas.length; i += zingsnis) {
+      rezultatas += tekstas[i];
+    }
+  
+    // Gražiname išrinktas raides
+    return rezultatas;
+  }
+  
+  // Testai:
+  console.log(isrinktiRaides("abcdefg", 2)); // "bdf"
+  console.log(isrinktiRaides("abcdefghijkl", 3)); // "cfil"
+  console.log(isrinktiRaides("abc", 0)); // "Antrasis kintamasis turi būti didesnis už nulį."
+  console.log(isrinktiRaides("abc", 4)); // "Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį."
+  console.log(isrinktiRaides(1561, 2)); // "Pirmasis kintamasis yra netinkamo tipo."
+
+  
+  //6

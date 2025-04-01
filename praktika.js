@@ -22,12 +22,6 @@ let student4 =['Birutė', 5,5,10,5,9]
 let student5 =['Stasys', 4,3,10,6,7]
 let student6 =['Juozas', 8,8,10,5,10]
 
-let name1=student1
-let name2=student2
-let name3=student3
-let name4=student4
-let name5=student5
-let name6=student6
 console.log ('mokinio vardas: ' + student1[0])
 console.log ('mokinio vardas: ' + student2[0])
 console.log ('mokinio vardas: ' + student3[0])
@@ -43,7 +37,7 @@ let vidurkis6= (student6[1]+student6[5]+student6[2]+student6[3]+student6[4])/5
 {
 if(vidurkis1>=3,45)
     {
-      console.log(student1[0]+' islaike.Jo vidurkis:'+vidurkis1)
+      console.log(student1[0]+' islaike.Jo vidurkis:'+ vidurkis1)
   
     } else
     {
@@ -368,25 +362,53 @@ function reverseValue(value, wordLength=0){
   } else if (typeof value === 'string '&& value.length=== word.lenght){
     
   }}
-  
+  //7
 
 
+  function stacPlot(x,y){
+    return x*y
+  }const stacPlotis=[2,7];
+  console.log(stacPlot(2,8));
+  console.log(stacPlot(stacPlot[0],stacPlot[1]))
 
+//8
 
+function arDalinasiIs3(skaicius) {
+  if (skaicius % 3 === 0) {
+      return true; 
+  } else {
+      return false; 
+  }
+}
+//9
 
+function pradineRaideA(zodis) {
+  if (zodis.charAt(0).toLowerCase() === 'a') {
+      return true; 
+  } else {
+      return false; 
+  }
+}
+//10
 
+function skaiciuotiVidurki(skaicius1, skaicius2, skaicius3) {
+  let vidurkis = (skaicius1 + skaicius2 + skaicius3) / 3;
+  return vidurkis;
+}
 
+//11
 
-
-
-
-
-
-
-
-
-
-
+function gautiIlgi(tekstas) {
+  return tekstas.length;
+}
+//12
+function sujungtiEilutes(eilute1, eilute2) {
+  return eilute1 + eilute2;
+}
+//13
+function arTarpReiksmiu(skaicius, reiksme1, reiksme2) {
+  return skaicius >= reiksme1 && skaicius <= reiksme2;
+}
 
 
   //* ciklas uzduotys*//
@@ -396,4 +418,174 @@ function reverseValue(value, wordLength=0){
   //1.
 
   for (let i=1;i<=10;i++)
-    count++
+   console.log(i)
+
+  //2
+  for (let i=10;i>=1;i--)
+    console.log(i)
+  //3
+  for(let i=20;i<=0;i++){
+    if(i%2===0){
+    console.log(i)}}
+    //4
+  for(let i=20;i>=0;i--){
+    if(i%2!=0){
+    console.log(i)}}
+  //5??
+
+  for (let n = 1; n <= 10; n++) {
+    console.log(n*n);
+}
+
+
+
+//6???
+
+
+    //7
+
+
+    for (let i = 1; i <= 10; i++) {
+      console.log(`7 * ${i} = ${7 * i}`);
+  }
+
+
+//8
+
+for (let i = 1; i <= 5; i++) {
+  let stars = '';
+  for (let j = 1; j <= i; j++) {
+      stars += '*';
+  }
+  console.log(stars);
+}
+
+//9
+
+let star='*****'
+for(let i =5; i>=1;i--){
+  let star='*';
+  for(let n=i;n>=1;n--){
+    star=star+'*'
+  } console.log(star)
+}
+
+//10
+for (let i=1;i>50;i++)
+  console.log(i%3===0)
+
+//11
+for (let i=1;i>=50;i++)
+  console.log(i%5===0)
+
+//12
+
+for (let i=1;i<=100;i++){
+  if(i % 3 === 0 && i % 5 === 0)
+  console.log(i)}
+
+  //13
+ let zodis = 'hello, world!'
+  for (let i=1;i<=5;i++)
+    console.log(zodis)
+
+
+  //1
+
+  for (let i=1;i<=100;i++){
+  if(i%4===0){
+    console.log('fizz')
+  }}
+
+  //2
+
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('fizzbizz');
+    } else if (i % 3 === 0) {
+        console.log('fizz');
+    } else if (i % 5 === 0) {
+        console.log('bizz');
+    } else {
+        console.log(i);
+    }
+}
+
+//3
+
+let x=1
+let y=2
+let z=0
+for(let i=1; i<=10 ;i++){
+    if (i===1){
+      console.log(x);
+    }else if (i===2){
+      console.log(y);
+    }else{
+      z=x+y;
+      x=y;
+      y=z;
+      console.log(z)
+    }
+}
+
+
+
+
+//4
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+      console.log(`${i} even`);
+  } else {
+      console.log(`${i} odd`);
+  }
+}
+//5
+const k = 'bet koks skaicius, is kurio dauginam'
+for (let i = 1; i <= 10; i++) {
+  console.log(`k * ${i} = ${k * i}`);
+}
+
+//6
+
+for (let i=1;i<=30;i++){
+  if(i % 2 === 0 && i % 3 === 0)
+  console.log(i)}
+
+
+//7
+let pirm=532
+for (let i=2;i<pirm;i++){
+  if(i<pirm&&pirm%i===0){
+    console.log(`skaicius${pirm} nera pirminis, dalinasi is ${i}`)
+  } else if (i === pirm){
+    console.log(`skaicius${pirm} yra pirminis`)
+  }
+}
+
+//8
+let countP=0
+let skaic=1
+
+for (let i =1; countP<11;i++){
+  for(let i=2;i<=Infinity;i++){
+    if(i<skaic&&skaic %i===0){
+      console.log(`skaicius${skaic} nera pirminis, dalinasi is ${i}`)
+    } else if (i===0){
+      console.log( `skaicius ${skaic} yra pirminis`)
+      countP+=1
+    }
+  }
+}
+
+
+//9
+
+let suma = 0;
+
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        suma += i;
+    }
+}
