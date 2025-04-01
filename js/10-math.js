@@ -96,10 +96,73 @@ console.log(Math.sign(9));
 
 //random
 
-console.log('\nrandom');//
-console.log(Math.random(4));
-console.log(Math.random(9));
-console.log(Math.random(4));
-console.log(Math.random(9));
-console.log(Math.random(4));
-console.log(Math.random(9));
+console.log('\nrandom');//visi nuo 0 iki 1 visi jie desimtainiai [0...1)
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+
+//random skaicius": nuo 0 iki 10 [0, 10)
+
+
+//0 iki 1
+console.log('\nrandom');
+console.log(Math.random())
+
+
+// random skaiciai :3 arba 7
+//[0...1)=[0....0.5)+[0.5...1)
+for(let i=0; i<10;i++) {
+    if(Math.random()<0.5){
+        console.log(3)
+    }else {
+        console.log(7)
+    
+    console.log(Math.random())
+}}
+
+
+//[12...149]
+
+
+function randomNumber(min,max) {
+ return Math.floor(Math.random()*(max-min+1)+min)
+}
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+
+
+function randomNumber(min,max) {//padidinti vienu sveiku skaiciu su random metodu
+    return Math.floor(Math.random()*(max-min+1)+min)
+   }
+   const counts=[0,0,0,0,0,0,0,0,0]
+for(let i=0; i<10;i++) {
+    const index = randomNumber(0,9);
+    counts[index]++
+}
+console.log(counts);
+
+const counts2=[0,0]
+for(let i=0; i<1000000;i++) {
+    const index = randomNumber(0,9);
+    counts[index]++
+}
+console.log(counts2);
+
+
+
+
