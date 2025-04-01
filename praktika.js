@@ -589,3 +589,46 @@ for (let i = 1; i <= 10; i++) {
         suma += i;
     }
 }
+
+console.clear();
+
+
+
+//uzduotys 
+
+
+//1
+
+
+
+//sukurti sarasa
+
+let miestai=[
+{miestas:('Kaunas', 89.6)},
+{miestas:('Klaipėda', 307.3)},
+{miestas:('Šiauliai', 213)},
+{miestas:('Panvėžys', 136)},
+{miestas:('Molėtai', 65)},
+{miestas:('Anykščiai', 114)},
+{miestas:('Prienai', 97)},
+{miestas:('Varėna', 83)},
+{miestas:('Marijampolė', 162)},
+{miestas:('Jonava', 92)},
+{miestas:('Vilnius', 0)}]
+//a
+function kurToliausiaiNuvaziuotumem(greitis,laikas){
+  let atstumas=greitis*laikas;
+  return atstumas
+}console.log(`Galite nuvažiuoti ${atstumas} km per ${laikas} valandas su ${greitis} km/h greičiu.`);
+//surasti miesta kuri galima pasiekti??
+
+
+  
+//???????
+
+//lengvesnes uzduotys
+
+for(let i=5;i>=15;i++);
+
+console.log(i)
+

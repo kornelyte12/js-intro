@@ -33,3 +33,31 @@ mokinioVidurkis(mokinys2)
 mokinioVidurkis(mokinys3)
 mokinioVidurkis(mokinys4)
 mokinioVidurkis(mokinys5)
+
+
+let atvirukoTekstas= 'labai geras daiktas yra televizorius as su juo galiu matyti jus';
+let=atvirukoRaide='a';
+let atvirukoSuma=0;
+for(let i=0;i<atvirukoTekstas.length;i++){
+  if(atvirukoTekstas[i]===atvirukoRaide){
+ atvirukoRaide+=1;
+  }
+}
+function atvirukoLipdukai(Raide){
+  atvirukoSuma=0
+  for(let i=0;i<atvirukoTekstas.length;i++){
+    if(atvirukoTekstas[i]===Raide){
+      atvirukoSuma+=1;
+    }
+  }
+return atvirukoSuma;
+}
+
+
+console.log(atvirukoLipdukai('a'));
+
+const atvirukoBalses=['a','e','o','u','i'];
+
+for(let i=0; i<atvirukoBalses.length;i++){
+  console.log('Raide'+ atvirukoBalses[i]+'pasikartoja'+ atvirukoLipdukai(atvirukoBalses[i]))
+}

@@ -23,6 +23,7 @@
         "number": "node --watch ./js-intro/js/1-number.js",
         "js": "node ./index.js",
         "praktika": "node ./praktika.js",
+        "lengvesnes": "node ./js-intro/lengvesnes.js",
         "marksaverage": "node --watch ./js-intro/js/marksaverage.js",
         "interval" : "node --watch ./js-intro/task/interval-sum.js",
         "test": "echo \"Error: no test specified\" && exit 1"
