@@ -621,7 +621,10 @@ function kurToliausiaiNuvaziuotumem(greitis,laikas){
   return atstumas
 }console.log(`Galite nuvažiuoti ${atstumas} km per ${laikas} valandas su ${greitis} km/h greičiu.`);
 //surasti miesta kuri galima pasiekti??
-
+for(let i=0;i<miestai.length;i+=2){
+  const miestas= miestai[i];
+  const atstumas=laikas[i+1];
+}
 
   
 //???????

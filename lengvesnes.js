@@ -48,4 +48,4 @@ for(let i=0;i<=sarasas.length;i++){
 let vardai=['Ana','Ema','Lana','Luna'];
 for(let i=0;i<=vardai.length;i++){
     console.log('Mano vardas":'+vardai[i]);
-}
+} 
