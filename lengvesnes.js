@@ -95,9 +95,11 @@ let sum=0
   console.log('12 uzduotis');
 
   let zodisP='programavimas';
-  //13 nuo 2 iki intervala suaugintu
+  //13 nuo 2 iki 10 intervala suaugintu??????????
 
   console.log('uzduotis 13');
+  let sandauga=1
   for(i=2;i<=10;i++){
-    if()
-  }
+    sandauga*=i
+    return sandauga
+  } console.log(sandauga(2,10))
