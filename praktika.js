@@ -616,22 +616,99 @@ let miestai=[
 {miestas:('Jonava', 92)},
 {miestas:('Vilnius', 0)}]
 //a
-function kurToliausiaiNuvaziuotumem(greitis,laikas){
-  let atstumas=greitis*laikas;
-  return atstumas
-}console.log(`Galite nuvažiuoti ${atstumas} km per ${laikas} valandas su ${greitis} km/h greičiu.`);
-//surasti miesta kuri galima pasiekti??
-for(let i=0;i<miestai.length;i+=2){
-  const miestas= miestai[i];
-  const atstumas=laikas[i+1];
+function kurTolimiausiai (miestai, greitis, laikas)
+{
+    let maxA = 0;
+    let kelias = greitis * laikas;
+    let maxM = 0;
+
+    for(let i = 0; i<miestai.length; i+=2)
+    {
+        //console.log(miestai[i]);
+        if(miestai[i+1]<= kelias && miestai[i+1]> maxA)
+        {
+            maxA = miestai[i+1];
+            maxM = i;
+        }
+    }
+    console.log(miestai[maxM] + ' ' + miestai[maxM+1]);
+
 }
 
-  
-//???????
+kurTolimiausiai(ManoMiestai, 80, 2)
 
-//lengvesnes uzduotys
 
-for(let i=5;i>=15;i++);
 
-console.log(i)
+function ArSpetume (miestai, miestas, laikas) //s = v*t 
+{
+
+    for(let i = 0; i<miestai.length; i+=2)
+    {
+        if(miestai[i]===miestas)
+        {
+            if(miestai[i+1]/laikas <= 120)
+            {
+                console.log("spesim " + miestai[i+1]/laikas)
+            }
+        }
+        else
+        {
+            console.log("miesto neradau")
+        }
+    }
+}
+
+ArSpetume(ManoMiestai, 'marijampolė', 2)
+
+
+function ArUzteks (miestai, pinigai, Kkaina, deginam)
+{
+    let kuras = 30 + pinigai/Kkaina;
+    let atstumas = kuras / deginam;
+    let maxA = 0
+    let maxM = 0
+    for(let i = 0; i<miestai.length; i+=2)
+        {
+            //console.log(miestai[i]);
+            if(miestai[i+1]<= atstumas && miestai[i+1]> maxA)
+            {
+                maxA = miestai[i+1];
+                maxM = i;
+            }
+        }
+
+    console.log(miestai[maxM] + ' ' + maxA)
+
+}
+
+ArUzteks(ManoMiestai, 10, 0.5, 0.5)
+
+
+const KelioSalygos = ['geras', 'prastas', 'taisomas', 'prastas'];
+
+function realusLaikas (miestai, salyga)
+{
+for(let i = 0; i<miestai.length; i+=2)
+    {
+        if(salyga[i/2]==='geras')
+        {
+            console.log(miestai[i+1])
+        }
+        if(salyga[i/2]==='prastas')
+            {
+                console.log(miestai[i+1]*1.5)
+            }
+            if(salyga[i/2]==='taisomas')
+                {
+                    console.log(miestai[i+1]*2)
+                }
+    }
+}
+
+realusLaikas(ManoMiestai, KelioSalygos)
+
+
+
+
+
 
