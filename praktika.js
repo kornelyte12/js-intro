@@ -599,6 +599,61 @@ console.clear();
 
 
 //1
+//a
 
 
+let pirmadienis=[-4, -2, 0, 2, 4]
+let antradienis=[-3, -1, 1, 3, 5]
+let treciadienis=[-2, 0, 2, 4, 6]
+let ketvirtadienis=[-1, 1, 3, 5, 7]
+let penktadienis=[0, 2, 4, 6, 8]
+let sestadienis=[-1, 1, 3, 5, 7]
+let sekmadienis=[-2, 0, 2, 4, 6]
+let vidurkis=0
+function vidurkis(pirmadienis, antradienis, treciadienis, ketvirtadienis, penktadienis, sestadienis, sekmadienis){
+  let suma=0
+  for (let i=0;i<pirmadienis.length;i++){
+    suma+=pirmadienis[i]+antradienis[i]+treciadienis[i]+ketvirtadienis[i]+penktadienis[i]+sestadienis[i]+sekmadienis[i]
+  }
+  vidurkis=suma/35
+  return vidurkis
+}
+//b
 
+function maxTemp(temperatura){
+  let max=temperatura[0]
+  for (let i=0;i<temperatura.length;i++){
+    if(temperatura[i]>max){
+      max=temperatura[i]
+    }
+  } return max
+}
+//c
+function minTemp(temperatura){
+  let min=temperatura[0]
+  for (let i=0;i<temperatura.length;i++){
+    if(temperatura[i]<min){
+      min=temperatura[i]
+    }
+  } return min
+}
+//d
+function minMaxTemp(temperatura){
+  let min=temperatura[0]
+  let max=temperatura[0]
+  for (let i=0;i<temperatura.length;i++){
+    if(temperatura[i]<min){
+      min=temperatura[i]
+    }else if(temperatura[i]>max){
+      max=temperatura[i]
+    }
+  } return min,max
+}
+//e
+function savTemp(temperatura){
+  let suma=0
+  for (let i=0;i<temperatura.length;i++){
+    suma+=temperatura[i]
+  } return suma/7
+}
+//f
