@@ -92,3 +92,12 @@ console.log(texts.join(' '));// sujungia masyvo elementus i viena stringa
 console.log(zodziai);
 
 
+console.log(texts.reverse());//apvercia masyva ir pasidaro is kito galo
+
+const c1=[1,11];
+const c2=[2,22];
+const c3=[3,33];
+const c4=[4,44];
+
+const c12=[c1.concatc2];//sujungia masyvus i viena///galima nauditi ir ta pati masyva apjungti
+console.log(texts.sort());//surikiuoja masyva
