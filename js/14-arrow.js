@@ -44,3 +44,17 @@ const sqr=a=>a*a
     /// arba a**2
 console.log(`${n1} * ${n1} = ${sqr(n1,n1)}`);
 console.log(`${n2} * ${n2} = ${sqr(n2,n2)}`);
+
+/// funkcija grzaina vardo pirma raide
+const firstLetter=name=>name[0];
+console.log(firstLetter('Jonas'));
+console.log(firstLetter('Maryte'));
+console.log(firstLetter('Petras'));
+
+///funkcija grazina pataisyta varda
+const fixName=name=>name[0].toUpperCase()+name.slice(1).toLowerCase();
+console.log(fixName('jonas'));
+
+//funkcija grazina teksta atbulai
+const reverseText=text=>text.split('').reverse().join('');
+console.log(reverseText('labas'));
