@@ -101,3 +101,8 @@ const c4=[4,44];
 
 const c12=[c1.concatc2];//sujungia masyvus i viena///galima nauditi ir ta pati masyva apjungti
 console.log(texts.sort());//surikiuoja masyva
+
+
+const h=[11,22,33,44,55];
+h.splice(3,0,4)//startine pozicija nuo kur istrinti (pozicija 3), kiek elementu istrinti (0), ir ka ideti i masyva (4)
+console.log(h);//[11,22,33,4,44,55]
