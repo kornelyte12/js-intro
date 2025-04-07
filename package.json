@@ -13,6 +13,7 @@
         "adult" : "node --watch ./js-intro/task/adult.js",
         "money" : "node --watch ./js-intro/task/money.js",
         "digit" : "node --watch ./js-intro/task/digit-count.js",
+        "names" : "node --watch ./js-intro/task/names.split.join.js",
         "intervalC" : "node --watch ./js-intro/task/interval-count.js",
         "stringR" : "node --watch ./js-intro/task/string-reverse.js",
         "valid-name" : "node --watch ./js.intro/task/valid-name.js",
