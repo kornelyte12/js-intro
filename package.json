@@ -19,6 +19,7 @@
         "valid-name" : "node --watch ./js.intro/task/valid-name.js",
         "if" : "node --watch ./js-intro/js/if.js",
         "boolean": "node --watch ./js-intro/js/boolean.js",
+        "arrow": "node --watch ./js-intro/js/14-arrow.js",
         "function": "node --watch ./js-intro/js/4-function.js",
         "nd": "node --watch ./nd.js",
         "array-methods": "node --watch ./js-intro/js/12-array-methods.js",
