@@ -18,6 +18,7 @@
         "fancy-math" : "node --watch ./js-intro/task/fancy-math.js",
         "stringR" : "node --watch ./js-intro/task/string-reverse.js",
         "valid-name" : "node --watch ./js.intro/task/valid-name.js",
+        "ternary" : "node --watch ./js.intro/task/ternary.js",
         "if" : "node --watch ./js-intro/js/if.js",
         "boolean": "node --watch ./js-intro/js/boolean.js",
         "arrow": "node --watch ./js-intro/js/14-arrow.js",

@@ -608,16 +608,18 @@ let treciadienis=[-2, 0, 2, 4, 6]
 let ketvirtadienis=[-1, 1, 3, 5, 7]
 let penktadienis=[0, 2, 4, 6, 8]
 let sestadienis=[-1, 1, 3, 5, 7]
-let sekmadienis=[-2, 0, 2, 4, 6]
-let vidurkis=0
+let sekmadienis=[-2, 100, 2, 4, 6]
+
 function vidurkis(pirmadienis, antradienis, treciadienis, ketvirtadienis, penktadienis, sestadienis, sekmadienis){
   let suma=0
+  let vidurkis1=0
   for (let i=0;i<pirmadienis.length;i++){
     suma+=pirmadienis[i]+antradienis[i]+treciadienis[i]+ketvirtadienis[i]+penktadienis[i]+sestadienis[i]+sekmadienis[i]
   }
-  vidurkis=suma/35
-  return vidurkis
+  vidurkis1=suma[i]/5
+  return vidurkis1
 }
+console.log(vidurkis(pirmadienis, antradienis, treciadienis, ketvirtadienis, penktadienis, sestadienis, sekmadienis))
 //b
 
 function maxTemp(temperatura){
@@ -628,6 +630,7 @@ function maxTemp(temperatura){
     }
   } return max
 }
+console.log(maxTemp(pirmadienis, antradienis, treciadienis, ketvirtadienis, penktadienis, sestadienis, sekmadienis))
 //c
 function minTemp(temperatura){
   let min=temperatura[0]
@@ -637,6 +640,7 @@ function minTemp(temperatura){
     }
   } return min
 }
+console.log(minTemp(pirmadienis, antradienis, treciadienis, ketvirtadienis, penktadienis, sestadienis, sekmadienis))
 //d
 function minMaxTemp(temperatura){
   let min=temperatura[0]
@@ -649,6 +653,7 @@ function minMaxTemp(temperatura){
     }
   } return min,max
 }
+console.log(minMaxTemp(pirmadienis, antradienis, treciadienis, ketvirtadienis, penktadienis, sestadienis, sekmadienis))
 //e
 function savTemp(temperatura){
   let suma=0
@@ -657,3 +662,9 @@ function savTemp(temperatura){
   } return suma/7
 }
 //f
+let krituliai='debesuota'
+function kaipEitiILauka(diena, krituliai){
+  if( vidurkis<= 0 && krituliai==='debesuota,salta'){
+    console.log('uzsidek striuke')
+}}
+console.log(kaipEitiILauka(diena, krituliai));
