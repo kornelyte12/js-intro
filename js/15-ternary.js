@@ -82,4 +82,6 @@ const e=1
 console.log(e);
 
 
-
+//unary(vienas)=>1
+//binary(du)+,-,*,/
+//ternary(trys)?:
