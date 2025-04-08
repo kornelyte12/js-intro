@@ -106,3 +106,101 @@ console.log(texts.sort());//surikiuoja masyva
 const h=[11,22,33,44,55];
 h.splice(3,0,4)//startine pozicija nuo kur istrinti (pozicija 3), kiek elementu istrinti (0), ir ka ideti i masyva (4)
 console.log(h);//[11,22,33,4,44,55]
+
+
+const f=s=>s[0];
+/// MAP
+
+const k=[10,2,8,4,6];///padvigubint ir idet padvigubintus i kita masyva
+const k1=[];
+
+for (const n of k){
+    k1.push(n*2);
+}
+console.log(k2);
+function triple(n1){
+    return n*3
+}
+const k3=k.map(triple);//sukuria nauja masyva k3 
+console.log(k3);
+
+
+const quadro=n=>n*4
+const k4=k.map(quadro);
+console.log(k4);
+
+const k5=k.map(n=>n*5);
+console.log(k5);
+
+const k6=k.map(n=>n);///masyvo kopija
+console.log(k6);
+
+const k7=k.map(n=>n+1);
+console.log(k7);
+
+
+const dict=['pomidoras','agurkas','bulve','svogunas'];
+
+
+const dict2=dict.map(w=>w[0]);
+console.log(dict2);//pirma raide
+
+
+const dict3=dict.map(w=>w.length);//ilgis
+console.log(dict3);
+
+const people=[
+
+    
+        {name:'Jonas',age:99},
+        { name:'maryte', age:88},
+        {name:'petras',age:77},
+        {name:'ona',age:66},
+    
+]
+
+const people100=people.map(p=>`${person.name} liko ${100-person.age} metai.`)
+console.log(people100);
+///jonas liko 1 metai
+///maryte liko 12 metu
+//petras liko23 metai
+//ona liko 34 metai
+
+
+const peopleNames=person.map(person=>person.name);///ismapina varda
+console.log(person.name);
+
+
+const peopleAge=person.map(person=>person.age)///ismapina amziu
+console.log(people.age)
+
+const peopleIsMarried=people.map(person=>{//// itraukia nauja masyva
+    person.isMarried=true;
+    people.luckyNumber=13;
+    return person;
+});
+console.log(peopleIsMarried);
+
+
+///filter
+const p=[10,2,8,4,6];/// paprastai ipusinti 
+const p5=[];
+
+for(const n of p){
+    if(n>5){
+        p5.push(n);
+    }
+}
+console.log(p5);
+
+
+const p6=p.filter(n=>n>6);//trumpiau supusinti
+console.log(p6);
+
+const p7=p.filter(n=>n>2&&n<8);
+console.log(p7);
+
+const texts5=['labas','','rytas','','rytas'];//teksto ilgis
+const texts5Updated=texts5.filter(t=>t.length>0);
+console.log(texts5Updated)
+
