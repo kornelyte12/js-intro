@@ -23,6 +23,7 @@
         "boolean": "node --watch ./js-intro/js/boolean.js",
         "arrow": "node --watch ./js-intro/js/14-arrow.js",
         "while": "node --watch ./js-intro/js/17-while.js",
+        "for-in": "node --watch ./js-intro/js/18-for-in.js",
         "function": "node --watch ./js-intro/js/4-function.js",
         "for-of": "node --watch ./js-intro/js/16-for-of.js",
         "nd": "node --watch ./nd.js",
