@@ -1,0 +1,1 @@
+//reduce -rezultato kaupimas total, masyvo elementas n
