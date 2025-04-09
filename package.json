@@ -31,6 +31,7 @@
         "string": "node --watch ./js-intro/js/2-string.js",
         "typeof": "node --watch ./js-intro/js/7-typeof.js",
         "number": "node --watch ./js-intro/js/1-number.js",
+        "sort": "node --watch ./js-intro/js/19-sort.js",
         "number-methods": "node --watch ./js-intro/js/12-number-methods.js",
         "js": "node ./js-intro/index.js",
         "praktika": "node ./js-intro/praktika.js",
