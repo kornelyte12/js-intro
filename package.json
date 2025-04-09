@@ -35,6 +35,7 @@
         "js": "node ./js-intro/index.js",
         "praktika": "node ./js-intro/praktika.js",
         "lengvesnes": "node ./js-intro/lengvesnes.js",
+        "code-wars": "node ./js-intro/code-wars.js",
         "praktikos-funkcijos55": "node ./js-intro/praktikos-funkcijos55.js",
         "marksaverage": "node --watch ./js-intro/js/marksaverage.js",
         "interval" : "node --watch ./js-intro/task/interval-sum.js",

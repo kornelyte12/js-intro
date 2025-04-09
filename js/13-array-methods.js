@@ -204,3 +204,19 @@ const texts5=['labas','','rytas','','rytas'];//teksto ilgis
 const texts5Updated=texts5.filter(t=>t.length>0);
 console.log(texts5Updated)
 
+//sort
+//reduce
+//every
+//fill - uzpildyti(ta pati skaiciu)
+const def7=array(7).fill(99);//uzpildyti 99 skicius, 7 kartus [99,99,99,99,99,99,99]
+console.log(def7);
+//every(filtras ar yra ar nera, paraso true, false)
+
+const trees=['uosis','egle','azuolas','tuopa'];
+const allTreesValid=trees.every(s=>s.length>0);
+console.log(allTreesValid);
+
+//some (bent vienas yra ta reiksme kur klausiame(siuo atveju ar daugiau uz 0))
+
+const someTreesValid=trees.some(s=>s.length>0);
+console.log(someTreesValid);
