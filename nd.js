@@ -534,4 +534,6 @@ function didziausiasSkaiciusSarase(sarasas) {
   console.log(isrinktiRaides(1561, 2)); // "Pirmasis kintamasis yra netinkamo tipo."
 
   
-  //6
+  //1
+
+  

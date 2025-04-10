@@ -668,3 +668,5 @@ function kaipEitiILauka(diena, krituliai){
     console.log('uzsidek striuke')
 }}
 console.log(kaipEitiILauka(diena, krituliai));
+
+console.clear();
